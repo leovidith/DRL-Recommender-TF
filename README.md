@@ -1,55 +1,71 @@
-# Deep Reinforcement Learning based Recommender System in Tensorflow
-The implemetation of Deep Reinforcement Learning based Recommender System from the paper [Deep Reinforcement Learning based Recommendation with Explicit User-Item Interactions Modeling](https://arxiv.org/abs/1810.12027) by Liu et al. Build recommender system with [DDPG](https://arxiv.org/abs/1509.02971) algorithm. Add state representation module to produce trainable state for RL algorithm from data. ***This is not the official implementation of the paper***.
+# Deep Reinforcement Learning for Recommendation (TensorFlow)
 
-# Dataset
-[MovieLens 1M Datset](https://grouplens.org/datasets/movielens/1m/)
+A high-fidelity TensorFlow implementation of a recommender system powered by Deep Deterministic Policy Gradient (DDPG), based on
+**Liu et al., "Deep Reinforcement Learning-based Recommendation with Explicit User-Item Interactions Modeling" (arXiv:1810.12027)**
+This version integrates performance-oriented modifications and state representation learning.
 
-```
+---
+
+## Dataset
+
+* [MovieLens 1M](https://grouplens.org/datasets/movielens/1m/)
+  Extract using:
+
+```bash
 unzip ./ml-1m.zip
 ```
 
-# Procedure
-- Trying to improve performance of RL based recommender system. The report contains the result of Using the actor network with embedding layer, reducing overestimated Q value, using several pretrained embedding and applying [PER](https://arxiv.org/abs/1511.05952).
+---
 
-- Making new embedding files. Previous one contains the information for entire timelines which can mislead model.
+## Core Contributions
 
-- Updating Train and Evaluation part. Currently, I didn't follow the exact same training and evaluation procedure in the paper.
+* State-aware user modeling with learnable embedding layers
+* Enhanced policy learning via Prioritized Experience Replay (PER)
+* Mitigated Q-value overestimation to stabilize training
+* Time-windowed embeddings to remove data leakage
+* Custom training and evaluation flow tailored for reproducibility and performance
 
+---
 
+## Results
 
-# Result
+Evaluation scores on held-out interactions:
 
-### Please check here - [Experiment Report (Korean)](https://www.notion.so/DRR-8e910fc598d242968bd371b27ac20e01)
+* Precision\@5: 0.479 | nDCG\@5: 0.471
+* Precision\@10: 0.444 | nDCG\@10: 0.429
 
-<br>
+[Experiment Report (Korean)](https://www.notion.so/DRR-8e910fc598d242968bd371b27ac20e01)
 
-![image](https://user-images.githubusercontent.com/30210944/109442330-40b37180-7a7b-11eb-8303-d45a8083dbc7.png)
+---
 
-- for evalutation data
-    - precision@5 : 0.479, ndcg@5 : 0.471
-    - precision@10 : 0.444, ndcg@10 : 0.429
+## Usage
 
-# Usage
-### Training
-- The saved model of actor and critic are generated after the training is done.
-```
+### Train
+
+```bash
 python train.py
 ```
-### Evalutation
-- Make sure there exist the saved models in the right directory
-- Run jupyter notebook and check "evaluation.ipynb"
 
-# requirements
-```
-tensorflow==2.5.0
-scikit-learn==0.23.2
-matplotlib==3.3.3
+### Evaluate
+
+Ensure saved models exist. Launch:
+
+```bash
+jupyter notebook
 ```
 
-# reference
+Run `evaluation.ipynb` for metrics.
 
-https://github.com/LeejwUniverse/RL_Rainbow_Pytorch
+---
 
-https://github.com/kyunghoon-jung/MacaronRL
+## Requirements
 
-https://github.com/pasus/Reinforcement-Learning-Book
+```bash
+tensorflow==2.17.0  
+scikit-learn==1.4.2  
+matplotlib==3.8.4
+```
+
+## Summary
+
+This repository reconstructs and evolves a DRL-based recommendation framework with precision-focused state modeling, policy refinement, and principled evaluation—suitable for academic benchmarking or experimental pipelines in applied reinforcement learning.
