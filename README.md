@@ -59,7 +59,7 @@ We implement an Actor-Critic architecture because:
 - The Actor learns the policy (what to recommend),
 - The Critic evaluates that policy (was it a good recommendation?),
 - Together, they enable stable, sample-efficient learning even with sparse or delayed feedback—common in recommendation settings.
-- 
+
 This design outperforms static models by continuously adapting to users, enabling the system to learn personalized, long-term optimal strategies, not just one-off predictions.
 
 ## Result
