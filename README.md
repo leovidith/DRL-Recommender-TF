@@ -69,3 +69,7 @@ This design outperforms static models by continuously adapting to users, enablin
 | NDCG          | 0.471  | 0.429  |
 | Reward Gain   | \> 17.3% over baseline | — |
 | Training Time | \~42 min (RTX 3050 - 4GB VRAM) | — |
+
+## References 
+Research Paper link - https://arxiv.org/pdf/1810.12027
+
