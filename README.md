@@ -1,4 +1,4 @@
-# Deep Reinforcement Learning for Recommendation
+# Deep Reinforcement Learning for Recommendation Systems using DDPG (TensorFlow 2.x)
 
 A high-fidelity TensorFlow implementation of a recommender system powered by Deep Deterministic Policy Gradient (DDPG), based on
 **Liu et al., "Deep Reinforcement Learning-based Recommendation with Explicit User-Item Interactions Modeling" (arXiv:1810.12027)**
