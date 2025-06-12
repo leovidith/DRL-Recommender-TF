@@ -41,10 +41,10 @@ flowchart TD
 
 
 ## Objectives
-- Model long-term user engagement using an Actor-Critic DRL framework  
-- Integrate explicit user-item interaction for enhanced reward feedback  
-- Achieve scalable, policy-based recommendation on implicit datasets  
-- Ensure TensorFlow 2.x compatibility for rapid experimentation
+- Model long-term user engagement using an Actor-Critic DRL framework ✅
+- Integrate explicit user-item interaction for enhanced reward feedback ✅ 
+- Achieve scalable, policy-based recommendation on implicit datasets ✅
+- Ensure TensorFlow 2.x compatibility for rapid experimentation ✅
 
 ## Intuition 
 Traditional recommender systems rely heavily on static supervised learning methods that fail to capture sequential user behavior and long-term engagement. However, recommendation is inherently a sequential decision-making problem—what you suggest now affects future user interactions.
