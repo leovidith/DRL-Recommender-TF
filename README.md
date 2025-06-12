@@ -63,10 +63,9 @@ We implement an Actor-Critic architecture because:
 This design outperforms static models by continuously adapting to users, enabling the system to learn personalized, long-term optimal strategies, not just one-off predictions.
 
 ## Result
-| Metric          | Value      |
-| --------------- | ---------- |
-| Accuracy        | 92.5%      |
-| Mean Reward     | 0.85       |
-| F1-Score        | 0.94       |
-| Training Time   | 1 hr (GPU) |
-| Inference Speed | 50ms/item  |
+| Metric        | @5     | @10    |
+|---------------|--------|--------|
+| Precision     | 0.479  | 0.444  |
+| NDCG          | 0.471  | 0.429  |
+| Reward Gain   | \> 17.3% over baseline | — |
+| Training Time | \~42 min (RTX 3050 - 4GB VRAM) | — |
