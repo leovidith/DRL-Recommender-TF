@@ -75,7 +75,7 @@ This design outperforms static models by continuously adapting to users, enablin
 | Training Time | \~42 min (RTX 3050 - 4GB VRAM) | — |
 
 ## References 
-Research Paper link - https://arxiv.org/pdf/1810.12027
+Research Paper - https://arxiv.org/pdf/1810.12027
 <br>
-Dataset Link - https://github.com/leovidith/DRL-Recommender-TF/tree/main/data
+Dataset - https://github.com/leovidith/DRL-Recommender-TF/tree/main/data
 
