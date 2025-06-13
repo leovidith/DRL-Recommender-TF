@@ -1,10 +1,12 @@
 # Deep Reinforcement Learning for Recommendation Systems using DDPG (TensorFlow 2.x)
-
-
 ## Overview
 A high-fidelity TensorFlow implementation of a recommender system powered by Deep Deterministic Policy Gradient (DDPG), based on
 **Liu et al., "Deep Reinforcement Learning-based Recommendation with Explicit User-Item Interactions Modeling" (arXiv:1810.12027)**
 This version integrates performance-oriented modifications and state representation learning.
+
+<p align="center">
+    <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0950705123000850-gr4.jpg" width="85%" alt="GPT-2 Architecture Overview"> 
+</p>
 
 ## Objectives
 - Model long-term user engagement using an Actor-Critic DRL framework ✅
