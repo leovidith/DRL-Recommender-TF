@@ -76,6 +76,5 @@ This design outperforms static models by continuously adapting to users, enablin
 
 ## References 
 - Research Paper - https://arxiv.org/pdf/1810.12027
-<br>
 - Dataset - https://github.com/leovidith/DRL-Recommender-TF/tree/main/data
 
