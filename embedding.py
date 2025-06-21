@@ -1,4 +1,4 @@
-import tensorflow as 
+import tensorflow as tf
 import numpy as np
 
 class MovieGenreEmbedding(tf.keras.Model):
