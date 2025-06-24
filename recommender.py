@@ -1,6 +1,6 @@
 from replay_buffer import PriorityExperienceReplay 
 import tensorflow as tf 
-import numpy as np  
+import numpy as np   
 from tensorflow.python.ops.gen_math_ops import Exp
 
 from actor import Actor
